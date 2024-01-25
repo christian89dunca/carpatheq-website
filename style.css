@@ -78,6 +78,16 @@ nav ul {
   justify-content: space-around;
 }
 
+nav ul li span{
+  padding: 20px;
+  border-radius: 4px;
+}
+
+nav ul li:hover{
+  transition: 0.3s;
+  background-color: #33333365;
+}
+
 ul li {
   position: relative;
   padding: 10px 0px;
@@ -164,7 +174,6 @@ ul li span:hover {
 
 .form-container input,
 textarea {
-  flex: 1;
   margin-bottom: 20px;
   background-color: #000;
   outline: 1px solid #333;
@@ -246,19 +255,19 @@ button:hover {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .contact-form {
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 811px) {
+@media only screen and (max-width: 811px) {
   .contact-form h2 {
     margin-bottom: 8px;
   }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .logo {
     transform: scale(0.8);
   }
@@ -267,7 +276,7 @@ button:hover {
   }
 }
 
-@media (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .logo {
     transform: scale(0.6);
   }
@@ -284,7 +293,7 @@ button:hover {
     margin-top: 93%;
   }
 }
-@media (max-width: 376px) {
+@media only screen and (max-width: 376px) {
   .contact-form h2 {
     margin-top: 27px;
   }
@@ -294,4 +303,4 @@ button:hover {
   .form-container div {
     flex-direction: column;
 }
-
+}
