@@ -26,6 +26,6 @@ function sendMail() {
     document.querySelector('#phone').value = '';
     document.querySelector('#message').value = '';
   })
-  .catch (error = console.log(error));
+  .catch (error => console.log(error));
 }
 
